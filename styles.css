@@ -236,7 +236,7 @@ header
     max-width: 90%;
     height: auto;
     box-sizing: border-box;
-    
+    border: 5px solid #007bff;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
