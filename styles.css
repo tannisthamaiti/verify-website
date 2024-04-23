@@ -1,0 +1,1024 @@
+/*
+    Name -Jasmeet Kaur
+    Student Number- 8983025
+ */
+
+/* ------------------------GENERAL STYLES-------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f6;
+    color: #333;
+}
+header
+{
+    padding-top: 90px;
+    padding-right: 20px;
+}
+
+/*------------------------------------------------NAVBAR----------------------------------------*/
+.nav
+{
+    background-color: rgba(66, 64, 64, 0.856);
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.856);
+}
+.nav_top
+{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+}
+.logo
+{
+    float:left;
+    width: 20%;
+}
+.logo img
+{
+    padding: 10px;
+    width:30%;
+    margin-left:70%;
+}
+.nav_side
+{
+    float:right;
+    width:45%;
+    margin-top: 20px;
+}
+.nav_side a
+{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left:50px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.nav_side a:hover
+{
+    color: rgb(211, 165, 194);
+    transition: all 1s ease;
+}
+
+/*------------------------------------------------MAIN----------------------------------------*/
+.main
+{
+    background-image: url("images/factgen.PNG");
+    /*img source: https://www.pexels.com/photo/monochrome-photo-of-old-books-13921129/*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 130vh;
+}
+.main .main_content
+{
+    padding-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:40%;
+}
+.main .main_content h2
+{
+    color: #000000;
+    font-size: 300%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+}
+.main .main_content h2 span
+{
+    font-size:50%;
+    opacity: 0.9;
+    font-weight: 400;
+    line-height: 50px;
+}
+.main .main_content .btn
+{
+    margin-top:5%;
+    text-align: left;
+    width:0%;
+}
+.main .main_content .btn a
+{
+    text-decoration: none;
+    font-size: large;
+    margin:44%;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.856);
+    color:white;
+    font-family: 'Trebuchet MS', sans-serif; 
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.856);
+    transition: 0.5s;
+}
+.main .main_content .btn a:hover
+{
+    background-color: rgba(255, 255, 255, 0.527);
+    color: rgb(37, 0, 19);
+    border: none;
+    border: 4px solid rgb(37, 0, 19);
+    transition:0.5s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 10px;
+    }
+}
+
+/*------------------------------------------------SIDE----------------------------------------*/
+.side 
+{
+    background-color: rgba(0, 0, 0, 0.966);
+    display: flex;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.side .left
+{
+    width:50%;
+    float: left;
+}
+.side .left img
+{
+    float: left;
+    width:100%;
+}
+.side .right
+{
+    background-color: rgba(0, 0, 0, 0.966);
+    width:50%;
+    float:right;
+}
+.side .right h2
+{
+    margin-top: 8%;
+    font-size: 250%;
+}
+.side .right p
+{
+    margin-left: 15%;
+    width: 70%;
+    font-size: 147%;
+    margin-top: 6%;
+}
+.side .right .side_btn
+{
+    margin-top:4%;
+}
+.side .right .side_btn a
+{
+    text-decoration: none;
+    font-size: large;
+    margin:32%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 4px double whitesmoke;
+    transition: 0.5s;
+}
+.side .right .side_btn a:hover
+{
+    background-color: rgb(79, 255, 88);
+    color: black;
+    font-weight:bolder;
+    border: none;
+    border: 4px solid green;
+    transition:0.5s;
+}
+.side-btn .join-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.image-content {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    flex-basis: 70%;
+    
+}
+
+.circle-image {
+    max-width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.text-content {
+    flex-basis: 50%;
+    padding-left: 20px; /* Add spacing between text and image */
+}
+
+/*------------------------------------------- CARD SECTION ----------------------------------------*/
+.product {
+    padding: 50px 5%;
+    background-image: url("images/factgen.PNG");
+    /* img source: https://www.pexels.com/photo/person-holding-an-open-book-3278770/ */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(234, 230, 230);
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-decoration:overline;
+}
+
+.product_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 25px rgba(255, 189, 165, 0.8);
+}
+
+.card_link {
+    color:#555;
+    text-decoration: none;
+}
+
+.card_img {
+    margin: 0;
+    overflow: hidden;
+}
+
+.card_img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.card_img img:hover {
+    transform: scale(1.1);
+}
+
+.card_content {
+    padding: 20px;
+}
+
+.card_content h3 {
+    font-size: 25px;
+    color: rgb(174, 186, 175);
+    margin-bottom: 15px;
+}
+
+.card_content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card_content ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card_button {
+    display: inline-block;
+    background-color: #2b8bf1;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .product_container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/*------------------------------------------------MAIN_ABOUT----------------------------------------*/
+.main_about
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/about.jpg");
+    /* img source: https://www.pexels.com/photo/woman-reading-in-library-3747474/ */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top:-1.5%;
+}
+.main_about .main_content_about h2
+{
+    color: white;
+    font-size: 390%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding:20%;
+}
+.product_about
+{
+    float:left;
+    background-image: url("images/about_back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    height: 80vh;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+/*----------------------------------------------EVENTS-------------------------------------------------*/
+.events-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #bebaba;
+}
+
+.events-heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.events-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for each item */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.event-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.event-content h3 {
+    color: #612260; /* Theme color for headings */
+    margin-bottom: 10px;
+}
+
+.event-content p {
+    font-size: 16px;
+    color: #6f185e;
+}
+
+@media (max-width: 768px) {
+    .events-list {
+        flex-direction: column;
+    }
+
+    .event {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+
+/*--------------------------------------------CONTACT---------------------------------------*/
+.contact_container
+{
+    margin-top: 80px;
+    padding: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 180vh;
+    margin-top:-1.5%;
+    color: white;
+}
+.contact_container h2
+{
+    margin-top: 80px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 33px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.contact_form {
+            max-width: 800px; /* Set a maximum width for larger screens */
+            margin: auto; /* Center the form horizontally */
+            padding: 20px; /* Add some padding inside the form */
+            background-color: #f4f4f4; /* A light grey background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle shadow for depth */
+        }
+        .contact_form input, .contact_form textarea {
+            width: 100%; /* Full width */
+            padding: 10px; /* Comfortable padding inside inputs and textarea */
+            margin-top: 6px; /* Space out elements */
+            margin-bottom: 16px; /* Space out elements */
+            border-radius: 4px; /* Slightly rounded borders for inputs and textarea */
+            border: 1px solid #cccccc; /* Light gray border */
+        }
+        .contact_form button {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding for the button */
+            background-color: #0056b3; /* A nice shade of blue */
+            color: rgb(255, 255, 255); /* White text */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        .contact_form button:hover {
+            background-color: #004494; /* A slightly darker blue on hover */
+        }
+
+/*--------------------------------------------DROPDOWN MENU--------------------------------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;  /* Clean white background for the dropdown */
+    min-width: 240px; /* Increased width to fit longer items */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    z-index: 100; /* High z-index to ensure the dropdown is above other content */
+    overflow: hidden; /* Keeps all dropdown items within the rounded borders */
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #333; /* Standard text color for readability */
+    padding: 12px 16px; /* Ample padding for better alignment and space */
+    text-decoration: none;
+    display: block; /* Ensures each link takes a full line */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7f7; /* Subtle change for hover background */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Shows the dropdown content when hovering over the dropdown */
+}
+
+/* Button Styling */
+.dropdown > .dropbtn {
+     /* Static blue background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners for the button */
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dropdown > .dropbtn:focus {
+    outline: none; 
+}
+
+.dropdown-content.clickable { display: none; }
+.dropdown.clickable:hover .dropdown-content { display: none; }
+.dropdown.clickable:focus-within .dropdown-content { display: block; }
+
+/* ---------------------------------------------BOOK SECTION AND ARTICLES------------------------------------------ */
+.book-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 20px;
+    align-items: stretch;
+    background-color: #6f6b6b;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="interests"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+/* Responsive Grid for Articles */
+@media (max-width: 600px) {
+    .book-categories {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*--------------------------------------------TABLE SECTION----------------------------------------------------- */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+}
+
+th, td {
+    border: 1px solid #6f6b6b;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3b4246;
+    color: white;
+}
+
+/*--------------------------------------------------REVIEW FORM--------------------------------------------------------------- */
+.form-container {
+    background-color: #c5c9c9; 
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    margin: auto; /* Center the form in the section */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-default {
+    background-color: #c91818;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: red;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+.checkbox-group, .radio-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label, .radio-group label {
+    margin-left: 5px; 
+    display: inline-block; /* Aligns the label next to the checkbox/radio button */
+    position: relative; /* Ensures label is positioned correctly relative to the input */
+}
+
+input[type='checkbox'], input[type='radio'] {
+    margin-right: 5px; /* Space between the checkbox/radio and the label */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 10px;
+    }
+}
+
+/* -----------------------------------------------VIDEO SECTION---------------------------------------------------------*/
+
+/* Container to wrap the video */
+.video-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Ensures no overflow outside the container */
+}
+
+/* Styling the video tag */
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Ensures video covers the space without distorting aspect ratio */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .video-container {
+        padding-top: 75%; 
+    }
+}
+
+/*---------------------------------------------GENRE SECTION-----------------------------------------------*/
+.genre-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.genre-box {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.genre-box a {
+    color: black;
+    text-decoration: none;
+}
+
+.genre-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.genre-box h3 {
+    padding: 10px;
+}
+
+.genre-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .genre-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* ---------------------------------------------BOOK CONTAINER STYLING-----------------------------------------*/
+.book-container {
+    width: 100%;  
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px;
+    padding-top: 80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #bcb5b5; 
+}
+
+/* Styling for headings */
+.book-container h1 {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+/* Flexbox for the book list */
+.book-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows books to wrap onto the next line */
+    justify-content: space-around; /* Evenly spaces the book divs within the container */
+    gap: 20px; /* Space between each book div */
+}
+
+/* Individual book styling */
+.book {
+    flex: 0 1 220px; /* Flex-grow, flex-shrink, and basis */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally within the book div */
+    padding: 10px;
+    background: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+}
+
+.book img {
+    width: 500px; 
+    height: 300px; 
+    max-width: 200px; 
+    margin-bottom: 10px; 
+}
+
+.book h3, .book p {
+    text-align: center; 
+    margin: 5px 0; /* Vertical spacing, no horizontal margin */
+}
+
+.book a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; 
+    background-color: #007bff; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.book a:hover {
+    background-color: #0056b3; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-list {
+        justify-content: center; 
+    }
+
+    .book {
+        flex-basis: 90%;
+    }
+}
+/*--------------------------------------------FOOTER----------------------------------------*/
+footer
+{
+    background-color: rgb(41, 40, 40);
+    padding:10px;
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+footer .aimg
+{
+    margin-top:21%;
+}
+footer .pages
+{
+    width:25%;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .pages p
+{
+    padding-top: 5%;
+    text-align: left;
+    color:rgba(255, 226, 243, 0.808);
+    width:90%;
+    padding-left:12%;
+}
+footer .pages a
+{
+    text-decoration: none;
+    margin:10px;
+    color: rgba(154, 119, 139, 0.808);
+    font-size: 30px;
+}
+footer .pages a:hover
+{
+    color:white;
+}
+footer .doc
+{
+    width:25%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 5%;
+}
+footer .doc h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 130px;
+}
+footer .doc a
+{
+    display: block;
+    text-decoration: none;
+    margin:10px;
+    color: rgba(255, 226, 243, 0.808);
+    font-size: 25px;
+}
+footer .doc a:hover
+{
+    color:white;
+}
+footer .social
+{
+    width:25%;
+    text-align: center;
+    display: inline-block;
+}
+footer .social h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 130px;
+}
+footer .contact
+{
+    width:20%;
+    text-align: center;
+    text-align: left;
+}
+footer .contact h3
+{
+    color: rgb(255, 226, 243);
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 130px;
+}
+footer .social p
+{
+    padding-top: 5%;
+    text-align: left;
+    color:rgba(255, 226, 243, 0.808);
+    width:90%;
+    padding-left:12%;
+    font-size: large;
+    margin-bottom: 18%;
+}
+.side .right .side_btn
+{
+    margin-top:4%;
+}
+footer .side_btn a
+{
+    text-decoration: none;
+    font-size: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: 2px double whitesmoke;
+    transition: 0.5s;
+}
+footer .side_btn a:hover
+{
+    background-color: rgb(127, 138, 128);
+    color: black;
+    font-weight:bolder;
+    border: none;
+    border: 4px solid rgb(22, 22, 22);
+    transition:0.5s;
+}
+footer .contact
+{
+    display: inline-block;
+}
+footer .contact a
+{
+    display: block;
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;;
+    color:rgba(247, 193, 224, 0.904);
+    margin:10px;
+}
+footer .contact a:hover
+{
+    color:white;
+}
+footer p
+{
+    color:rgba(247, 178, 217, 0.726);
+    text-align: center;
+    font-size: 110%;
+}
