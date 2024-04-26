@@ -728,10 +728,17 @@ input[type='checkbox'], input[type='radio'] {
 
 /* Container to wrap the video */
 .video-container {
+    
     position: relative;
-    width: 100%; /* Full width of the container */
+    width: 80%; /* Full width of the container */
     overflow: hidden; /* Ensures no overflow outside the container */
+    height: 400px;
 }
+video{
+    padding-top:50px;
+}
+
+
 
 /* Styling the video tag */
 .video-container video {
